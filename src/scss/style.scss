@@ -1,0 +1,64 @@
+@import url(../libs/bootstrap-grid.min.css);
+@import url(../fonts/inter/inter.css);
+@import url(../libs/owl/owl.carousel.min.css);
+@import url(../libs/owl/owl.theme.default.min.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+$blue: #35B8BE;
+// @mixin fonts($wd, $hg, $bg, $fz, $bd, $fs, $mg){
+//     width: $wd;
+//     height: $hg;
+//     background: $bg;
+//     font-size: $fz;
+//     border: $bd;
+//     font-style: $fs;
+//     margin: $mg;
+// }
+// .box1{
+//     @include fonts(100px, 100px, #333, 16px, 1px solid black, normal, 10px);
+// }
+// .box2{
+//     @include fonts(200px, 200px, #932a2a, 12px, 5px dotted rgb(202, 156, 156), italic, 5px);
+// }
+// .box3{
+//     @include fonts(150px, 124px, #453621, 15px, 3px dashed blue, normal, 12px);
+// }
+
+@import 'header.scss';
+@import 'home.scss';
+@import 'menu.scss';
+
+.order {
+    .text {
+        height: 250px;
+        transition: height .4s ease 0.4s;
+        &_hidden {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            height: 55.5px;
+            
+        }
+        &_more-btn{
+            text-decoration: underline;
+            color: $blue;
+            cursor: pointer;
+        }
+    }
+}
+
+@import 'overlay.scss';
+@import 'media.scss';
